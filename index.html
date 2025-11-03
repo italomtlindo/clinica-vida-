@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Vida+</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#listar">Listar Consultas</a></li>
+      <li><a href="#buscar">Buscar Consultas</a></li>
+      <li><a href="index2.html">Pagina 2</a></li>
+    </ul>
+  </nav>
+  <header class="header">
+    <h1>Clinica Viva+</h1>
+    <p>"Mais saúde, mais vida, mais você - Viva+"</p>
+  </header>
+
+  <section id="sinopse" class="seção">
+    <center>
+      <h2></h2>
+      <p>
+        Bem-vindo à Clínica Viva+, um espaço dedicado ao cuidado integral da sua saúde e bem-estar. Aqui, acreditamos
+        que viver bem é mais do que tratar doenças — é cuidar de cada detalhe que faz a vida ter mais qualidade,
+        equilíbrio e alegria.
+      </p>
+    </center>
+  </section>
+
+<section id="trailer" class="seção">
+  <h2>Listar Médicos</h2>
+
+  <div class="buscar">
+    <input type="text" id="buscar" placeholder="Buscar por especialidade" onkeyup="buscarPorEspecialidade()">
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th> 
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Medico</th>
+        <th>Especialidade</th>
+        <th>Data</th>
+        <th>Horario</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody id="consulta-tbody">
+      <tr>
+        <td><a>1</a></td>
+        <td class="nome paciente"><a>Ana Costa</td>
+        <td>(11) 99999-1234</td>
+        <td class="nome medico">Dr. Haron</td>
+        <td class="especialidade">Cardiologista</td>
+        <td class="data">2024-09-25</td>
+        <td class="hora">14:00</td>
+        <td class="status">agendada</td>
+      </tr>
+
+      <tr>
+        <td><a>2</a></td>
+        <td class="nome paciente"><a>Jose Silva</td>
+        <td>(11) 98888-5678</td>
+        <td class="nome medico">Dr. Bruno</td>
+        <td class="especialidade">Clinico Geral</td>
+        <td class="data">2024-09-26</td>
+        <td class="hora">09:30</td>
+        <td class="status">finalizada</td>
+      </tr>
+
+      <tr>
+        <td><a>3</a></td>
+        <td class="nome paciente"><a>Maria Lima</td>
+        <td>(11) 97777-4321</td>
+        <td class="nome medico">Dr. Haron</td>
+        <td class="especialidade">Cardiologista</td>
+        <td class="data">2024-09-27</td>
+        <td class="hora">10:15</td>
+        <td class="status">em andamento</td>
+      </tr>
+
+      <tr>
+        <td><a>4</a></td>
+        <td class="nome paciente"><a>Carlos Pereira</td>
+        <td>(11) 96666-1111</td>
+        <td class="nome medico">Dr. Bruno</td>
+        <td class="especialidade">Clinico Geral</td>
+        <td class="data">2024-09-28</td>
+        <td class="hora">15:00</td>
+        <td class="status">agendada</td>
+      </tr>
+
+      <tr>
+        <td><a>5</a></td>
+        <td class="nome paciente"><a>Julia Souza</td>
+        <td>(11) 95555-8888</td>
+        <td class="nome medico">Dr. Paulo Muzy</td>
+        <td class="especialidade">Ortopedia</td>
+        <td class="data">2024-09-29</td>
+        <td class="hora">13:45</td>
+        <td class="status">agendada</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+  <section id="elenco" class="seção">
+    <h2>Médicos</h2>
+    <div class="cards">
+      <div class="card">
+        <img
+          src="https://pixel-p1.s3.sa-east-1.amazonaws.com/doctor/avatar/284e41b4/284e41b4-2838-4c49-8282-c5465b5d4e52_medium_square.jpg "
+          alt="">
+        <h3>Cardiologista</h3>
+        <p>Dr. Haron</p>
+        <br>
+
+      </div>
+      <div class="card">
+        <img
+          src="https://mobilidade.hospitalmoriah.com.br/wp-content/uploads/2024/09/instituto-da-mobilidade-dr-paulo-muzy.jpg"
+          alt="">
+        <h3>Ortopedista</h3>
+        <p>Dr. Paulo Muzy</p>
+        <br>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://s2.glbimg.com/R2z0jLD1NToPE2GCW1Z313SX7K8=/e.glbimg.com/og/ed/f/original/2016/09/26/img_0516.jpg">
+        <h3>Pediatra</h3>
+        <p>Dr. Carlos Gonzalez</p>
+        <br>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://s2-g1.glbimg.com/C-VE-9Cc0eodzyBTeGrVQzA8smk=/472x0:1121x900/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/0/J2n7x7QZACMrStAAVmuQ/4.png">
+        <h3>Clinca Geral</h3>
+        <p>Dr. Bruno</p>
+        <br>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contato" class="seção">
+    <h2>Deixe sua opinião</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="O que achou do site?" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Site fictício criado por Matheus Spineli | © 2025</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="twitter"></a>
+    </div>
+  </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
